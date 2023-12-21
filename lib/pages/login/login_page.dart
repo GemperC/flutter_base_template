@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:LuxCal/utils/theme.dart';
-import 'package:LuxCal/widgets/custom/model.dart';
-import 'package:LuxCal/pages/login/login_model.dart';
+import 'package:supermegataxi/utils/theme.dart';
+import 'package:supermegataxi/widgets/custom/model.dart';
+import 'package:supermegataxi/pages/login/login_model.dart';
 
 import '../../utils/screen_sizes.dart';
 import '../../utils/utils.dart';
@@ -45,7 +45,7 @@ class _LoginWidgetState extends State<LoginWidget> {
         width: ScreenInfo(context).screenWidth,
         child: Stack(children: [
           BannerWidget(
-            title: "LuxCal",
+            title: "supermegataxi",
             backGroundColor: AppColors.bannerColor,
             ringColor: AppColors.bannerLightColor,
             height: ScreenInfo(context).screenHeight * 0.15,

@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:LuxCal/backend/auth/auth_util.dart';
-import 'package:LuxCal/backend/auth/firebase_user_provider.dart';
-import 'package:LuxCal/widgets/custom/button.dart';
+import 'package:supermegataxi/backend/auth/auth_util.dart';
+import 'package:supermegataxi/backend/auth/firebase_user_provider.dart';
+import 'package:supermegataxi/widgets/custom/button.dart';
 import 'package:calendar_view/calendar_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -291,11 +291,11 @@ class _AddEventWidgetState extends State<AddEventWidget> {
   }
 
   Widget imagePreview(File? selectedImage) {
-  if (selectedImage == null) {
-    return Text("No image selected.");
+    if (selectedImage == null) {
+      return Text("No image selected.");
+    }
+    return Image.file(selectedImage);
   }
-  return Image.file(selectedImage);
-}
 
   void _displayColorPicker() {
     var color = _model.color;

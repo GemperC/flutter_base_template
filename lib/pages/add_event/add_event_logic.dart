@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:LuxCal/pages/add_event/add_event_model.dart';
+import 'package:supermegataxi/pages/add_event/add_event_model.dart';
 import 'package:calendar_view/calendar_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -11,8 +11,6 @@ import '../../backend/auth/auth_util.dart';
 import '../../backend/records/event_record.dart';
 import '../../utils/utils.dart';
 import 'event.dart';
-
-
 
 Future<File?> pickImage() async {
   final picker = ImagePicker();

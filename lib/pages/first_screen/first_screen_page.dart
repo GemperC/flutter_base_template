@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:LuxCal/utils/screen_sizes.dart';
-import 'package:LuxCal/pages/first_screen/first_screen_logic.dart';
-import 'package:LuxCal/pages/first_screen/first_screen_styles.dart';
+import 'package:supermegataxi/utils/screen_sizes.dart';
+import 'package:supermegataxi/pages/first_screen/first_screen_logic.dart';
+import 'package:supermegataxi/pages/first_screen/first_screen_styles.dart';
 
 import '../../utils/theme.dart';
 import '../../widgets/custom/ring.dart';
@@ -45,7 +45,7 @@ class FirstScreenWidget extends StatelessWidget {
                     style: titleStyle_title,
                   ),
                   Text(
-                    "LuxCal",
+                    "supermegataxi",
                     style: titleStyle_appname,
                   ),
                   Text(

@@ -1,4 +1,4 @@
-import 'package:LuxCal/backend/auth/auth_util.dart';
+import 'package:supermegataxi/backend/auth/auth_util.dart';
 import 'package:flutter/material.dart';
 
 import '../add_event/constants.dart';

@@ -1,7 +1,7 @@
-import 'package:LuxCal/pages/home/home_view.dart';
+import 'package:supermegataxi/pages/home/home_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:LuxCal/pages/login/login_page.dart';
+import 'package:supermegataxi/pages/login/login_page.dart';
 
 import '../../utils/utils.dart';
 import '../register/register_page.dart';

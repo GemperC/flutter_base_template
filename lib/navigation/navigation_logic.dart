@@ -1,4 +1,4 @@
-import 'package:LuxCal/pages/add_event/add_event_page.dart';
+import 'package:supermegataxi/pages/add_event/add_event_page.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/add_news/add_news_page.dart';

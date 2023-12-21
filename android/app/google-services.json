@@ -1,21 +1,78 @@
 {
   "project_info": {
-    "project_number": "160053690034",
-    "project_id": "luxcal-75a29",
-    "storage_bucket": "luxcal-75a29.appspot.com"
+    "project_number": "588498414284",
+    "project_id": "taxi-project-d05f4",
+    "storage_bucket": "taxi-project-d05f4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:160053690034:android:b7b3aaeb3fc29bcd39d3ab",
+        "mobilesdk_app_id": "1:588498414284:android:65936e00cd7eab5d51f069",
         "android_client_info": {
-          "package_name": "com.luxcal.luxcalapp"
+          "package_name": "com.supermegataxi.app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB09uw_Mp-oSbmNb9PNNglssPtAVYcyGf0"
+          "current_key": "AIzaSyDDqa9Y4ohkhznYDjNk1zbj5vOWPTYCBwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588498414284:android:f7d667fc5c036fb851f069",
+        "android_client_info": {
+          "package_name": "com.taxi_app.taxi_appapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDqa9Y4ohkhznYDjNk1zbj5vOWPTYCBwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588498414284:android:bbd9e0379f400aca51f069",
+        "android_client_info": {
+          "package_name": "com.taxi_drivers.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDqa9Y4ohkhznYDjNk1zbj5vOWPTYCBwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588498414284:android:a3fa2f3bd9ff2d6b51f069",
+        "android_client_info": {
+          "package_name": "com.taxi_drivers.luxcalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDqa9Y4ohkhznYDjNk1zbj5vOWPTYCBwk"
         }
       ],
       "services": {
