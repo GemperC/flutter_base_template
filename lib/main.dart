@@ -1,14 +1,11 @@
-import 'package:supermegataxi/navigation/navigation.dart';
 import 'package:calendar_view/calendar_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:supermegataxi/utils/utils.dart';
-import 'package:supermegataxi/pages/first_screen/first_screen_page.dart';
 import 'package:supermegataxi/pages/home/home_view.dart';
 import 'package:supermegataxi/pages/login/login_page.dart';
-import 'package:supermegataxi/pages/nickname/nickname_page.dart';
 
 import 'backend/auth/auth_util.dart';
 import 'backend/auth/firebase_user_provider.dart';
@@ -50,14 +47,12 @@ class _MyAppState extends State<MyApp> {
     return CalendarControllerProvider(
       controller: EventController(),
       child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        scaffoldMessengerKey: Utils.messengerKey,
-        home: !storage.read('display_first_screen')
-            ? (currentUser != null && currentUser!.loggedIn)
-                ? NavigationWidget()
-                : LoginWidget()
-            : FirstScreenWidget(),
-      ),
+          debugShowCheckedModeBanner: false,
+          scaffoldMessengerKey: Utils.messengerKey,
+          theme: ThemeData.light(),
+          home: (currentUser != null && currentUser!.loggedIn)
+              ? HomeWidget()
+              : LoginWidget()),
     );
   }
 }

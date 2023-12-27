@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../backend/auth/auth_util.dart';
 import '../../utils/utils.dart';
-import '../nickname/nickname_page.dart';
 
 Future<void> signUp(context, _model) async {
   if (!Utils.isFormValidated(_model.formKey)) return;
@@ -22,11 +21,5 @@ Future<void> signUp(context, _model) async {
 }
 
 void navigateToNicknameWidget(context) {
-  Navigator.pushAndRemoveUntil(
-    context,
-    MaterialPageRoute(
-      builder: (context) => NicknameWidget(),
-    ),
-    (r) => false,
-  );
+ 
 }

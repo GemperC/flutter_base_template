@@ -5,7 +5,6 @@ import 'package:supermegataxi/pages/login/login_model.dart';
 
 import '../../utils/screen_sizes.dart';
 import '../../utils/utils.dart';
-import '../../widgets/custom/banner.dart';
 import '../../widgets/custom/button.dart';
 import '../../widgets/custom/quarter_circle.dart';
 import '../../widgets/custom/ring.dart';
@@ -46,13 +45,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
           height: ScreenInfo(context).screenHeight,
           width: ScreenInfo(context).screenWidth,
           child: Stack(children: [
-            BannerWidget(
-              title: "supermegataxi",
-              showBackButton: true,
-              backGroundColor: AppColors.bannerColor,
-              ringColor: AppColors.bannerLightColor,
-              height: ScreenInfo(context).screenHeight * 0.15,
-            ),
+
             Padding(
               padding: EdgeInsets.only(
                   top: ScreenInfo(context).screenHeight * 0.15,
@@ -85,15 +78,15 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               obscureText: false,
               decoration: InputDecoration(
                 labelText: 'Name',
-                labelStyle: AppTypography.textfieldHintText,
+                labelStyle: AppTypography.textfieldHintText(context),
                 filled: true,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20.0),
                   borderSide: BorderSide.none,
                 ),
-                fillColor: AppColors.cardColor,
+                fillColor: Theme.of(context).cardColor,
               ),
-              style: AppTypography.textfieldText,
+              style: AppTypography.textfieldText(context),
               keyboardType: TextInputType.emailAddress,
             ),
             validator: _model.nameTextControllerValidator,
@@ -107,15 +100,15 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                 obscureText: false,
                 decoration: InputDecoration(
                   labelText: 'Email',
-                  labelStyle: AppTypography.textfieldHintText,
+                  labelStyle: AppTypography.textfieldHintText(context),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
                     borderSide: BorderSide.none,
                   ),
-                  fillColor: AppColors.cardColor,
+                  fillColor: Theme.of(context).cardColor,
                 ),
-                style: AppTypography.textfieldText,
+                style: AppTypography.textfieldText(context),
                 keyboardType: TextInputType.emailAddress,
               ),
               validator: _model.emailTextControllerValidator,
@@ -130,15 +123,15 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Password',
-                  labelStyle: AppTypography.textfieldHintText,
+                  labelStyle: AppTypography.textfieldHintText(context),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
                     borderSide: BorderSide.none,
                   ),
-                  fillColor: AppColors.cardColor,
+                  fillColor: Theme.of(context).cardColor,
                 ),
-                style: AppTypography.textfieldText,
+                style: AppTypography.textfieldText(context),
                 keyboardType: TextInputType.emailAddress,
               ),
               validator: _model.passwordTextControllerValidator,
@@ -153,15 +146,15 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Confirm Password',
-                  labelStyle: AppTypography.textfieldHintText,
+                  labelStyle: AppTypography.textfieldHintText(context),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
                     borderSide: BorderSide.none,
                   ),
-                  fillColor: AppColors.cardColor,
+                  fillColor: Theme.of(context).cardColor,
                 ),
-                style: AppTypography.textfieldText,
+                style: AppTypography.textfieldText(context),
                 keyboardType: TextInputType.emailAddress,
               ),
               validator: _model.confirmPasswordControllerValidator,
@@ -185,7 +178,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                 },
                 child: Text(
                   "Already have an account? click here to sign in",
-                  style: AppTypography.textfieldText.copyWith(fontSize: 16),
+                  style: AppTypography.textfieldText(context),
                 )),
           ),
           Flexible(child: Container()),

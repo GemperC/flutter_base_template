@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../calander/calendar_page.dart';
-
 class HomeAppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize =>
@@ -14,13 +12,7 @@ class HomeAppbarWidget extends StatelessWidget implements PreferredSizeWidget {
       title: Text('Custom AppBar'),
       actions: [
         ElevatedButton.icon(
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => CalendarWidget(),
-                ));
-          },
+          onPressed: () {},
           icon: Icon(Icons.calendar_month),
           label: Text("calendar"),
         )

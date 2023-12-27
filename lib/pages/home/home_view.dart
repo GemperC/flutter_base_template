@@ -15,10 +15,10 @@ class _HomeWidgetState extends State<HomeWidget> {
       body: Container(
         height: 200,
         width: 200,
-        color: AppColors.bannerColor,
+        color: Theme.of(context).canvasColor,
         child: Text(
           "Test colors 123",
-          style: AppTypography.bannerTitle,
+          style: AppTypography.bannerTitle(context),
         ),
       ),
     );

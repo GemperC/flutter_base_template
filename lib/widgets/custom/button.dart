@@ -50,7 +50,7 @@ class CustomMainButton extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             buttonText,
-            style: AppTypography.buttonText.copyWith(color: buttonTextColor),
+            style: AppTypography.buttonText(context),
           ),
         ),
       ),
